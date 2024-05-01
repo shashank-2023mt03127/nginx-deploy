@@ -24,19 +24,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
-  namespace: default
-spec:
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-  selector:
-    app: nginx
----
-apiVersion: v1
-kind: Service
-metadata:
   name: nginx-preview-service
   namespace: default
 spec:
@@ -51,3 +38,16 @@ spec:
       port: 80
       targetPort: 80
   type: NodePort 
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: default
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  selector:
+    app: nginx
