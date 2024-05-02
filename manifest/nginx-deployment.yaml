@@ -261,7 +261,7 @@ spec:
     spec:
       containers:
       - name: minikube
-        image: dikshita858/appimage:latest:green
+        image: dikshita858/appimage:blue
         ports:
         - containerPort: 5000
 ---
