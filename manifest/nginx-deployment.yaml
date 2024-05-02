@@ -287,8 +287,8 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
-  rules:
-  - host: your-domain.com
+  rules: http://localhost:5000
+  - host: 
     http:
       paths:
       - path: /
